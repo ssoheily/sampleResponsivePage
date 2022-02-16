@@ -1,0 +1,811 @@
+/* App Fonts */
+
+@font-face {
+    font-family: "TTNorms";
+    src: url("../fonts/TTNorms-Regular.otf") format("openType");
+}
+
+@font-face {
+    font-family: "TTNorms Medium";
+    src: url("../fonts/TTNorms-Medium.otf") format("openType");
+}
+
+@font-face {
+    font-family: "TTNorms Light";
+    src: url("../fonts/TTNorms-Light.otf") format("openType");
+}
+
+@font-face {
+    font-family: "Times Roman Italic";
+    src: url("../fonts/Times-new-roman-italic.ttf") format("truetype");
+}
+
+/* Normalize Css */
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    display: block;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+pre {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+a {
+    background-color: transparent;
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted;
+}
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+small {
+    font-size: 80%;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+img {
+    border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+button,
+input {
+    overflow: visible;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+fieldset {
+    padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    /* 3 */
+    white-space: normal;
+}
+
+progress {
+    vertical-align: baseline;
+}
+
+textarea {
+    overflow: auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+[type="search"] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px;
+}
+
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
+}
+
+details {
+    display: block;
+}
+
+summary {
+    display: list-item;
+}
+
+template {
+    display: none;
+}
+
+[hidden] {
+    display: none;
+}
+
+/* Start Project */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "TTNorms";
+}
+
+.container {
+    max-width: 80rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+
+/* start header */
+.header {}
+
+/* header top */
+.header-top {
+    display: flex;
+    /* between logo + ul and link(contact us) */
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+}
+
+.nav {
+    display: flex;
+    /* logo and ul and link in center-height  div */
+    align-items: center;
+
+}
+
+.nav-logo {
+    /* space between logo and ul */
+    margin-right: 1.5rem;
+}
+
+.nav-logo__image {}
+
+.menu {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+
+}
+
+.menu-item {}
+
+.menu__link {
+    text-decoration: none;
+    color: #081d43;
+    padding: 0 1rem;
+}
+
+
+.header-link {
+    background-color: #0050c8;
+    color: #fff;
+    text-decoration: navajowhite;
+    padding: 0.8rem 1.2rem;
+    border-radius: .3rem;
+    text-decoration: none;
+}
+
+.header__icon {
+    font-size: 1.8rem;
+    display: none;
+    cursor: pointer;
+}
+
+
+/* header botton */
+
+.header-bottom {
+    margin-top: 5.5rem;
+}
+
+.header-content {
+    display: flex;
+    /* element leftand right in middle height of div */
+    align-items: center;
+}
+
+.heder-content__left {
+    /* division part with '.heder-content__right' */
+    flex-basis: 50%;
+}
+
+.header-content__wrapper {
+    /* devision lines-text in 4 line  */
+    max-width: 28rem;
+}
+
+.header-content__title {
+    color: #081d43;
+    font-family: "TTNorms Medium";
+    font-weight: normal;
+    line-height: 2.5rem;
+}
+
+.header-content__text {
+    color: #6c7890;
+    line-height: 2rem;
+}
+
+.header-content__links {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.header-content__link {
+    background-color: #0050c8;
+    padding: 0.8rem 1.5em;
+    color: #fff;
+    border-radius: 0.3rem;
+    text-decoration: none;
+    margin-right: 0.8rem;
+    /* display for tag a was inline, change display to block therefor parent with flex is working */
+    display: block;
+    width: 10rem;
+    text-align: center;
+}
+
+.header-content__link:nth-child(1) {
+    background-color: #87bc25;
+}
+
+.heder-content__right {
+    /* division part with '.heder-content__left' */
+    flex-basis: 50%;
+}
+
+.header-content_right_image {
+    /* fill div parent */
+    width: 100%;
+}
+
+/* start main */
+
+.main {
+    /* distance header and main */
+    padding-top: 3rem;
+}
+
+.work {
+    text-align: center;
+    /* set fix value margin for every distance section main */
+    margin: 5rem 0;
+}
+
+.works__text, .portFolio__text {
+    color: #6C7890;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    /* delete margin default 'tag h'*/
+    margin-top: 0;
+}
+
+.works__title, .portFolio__title {
+    color: #081D43;
+    margin-top: 0.8rem;
+    font-family: "TTNorms Medium";
+    /* font is fat,then => font-weight: normal  */
+    font-weight: normal;
+    font-size: 1.8rem;
+}
+
+.works-content {
+    margin-top: 3rem;
+    /* show element in row replace column*/
+    display: flex;
+    /* if you have blank place, use justify-content */
+    justify-content: space-around;
+    margin-bottom: 3rem;
+    /* helpful in resposive mode */
+    flex-wrap: wrap;
+}
+
+.works-content__item {
+    /* every one 3 item size */
+    flex-basis: 16rem;
+    /* no smaller from standard */
+    flex-shrink: 0;
+    margin-bottom: 1.5rem;
+}
+
+.works-content__title {
+    color: #081D43;
+
+}
+
+.works-content__text {
+    color: #6C7890;
+    /* same line height for compelte project */
+    line-height: 2rem;
+    max-width: 16rem;
+    /* respondive in smaller than 576px */
+    /* margin: 0 auto; */
+
+
+
+}
+
+.work-img {
+    max-width: 31rem;
+    /* display image is online , and better here with  margin send to center  */
+    margin: 0 auto;
+
+}
+
+.work-img__img {
+    width: 100%;
+}
+
+/* start person-comments */
+
+.person-comments {
+    background-color: #2f5bea;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+    /* set fix value margin for every distance section main */
+    margin: 5rem 0;
+}
+
+.person-comments__title {
+    font-family: "TTNorms Medium";
+    /* font is fat,then => font-weight: normal  */
+    font-weight: normal;
+    /* delete margin default 'tag h'*/
+    margin-top: 0;
+    font-size: 1.8rem;
+}
+
+.person-comments__text {
+
+    font-family: "TTNorms Light";
+    /* same tag <br> for line  */
+    max-width: 28rem;
+    /* after max-width come on the left , come once agin in middle */
+    margin: 0 auto;
+    line-height: 1.8rem;
+}
+
+/* Create more niches in the container-comment than container */
+/* it is for better size(width) commen-part in container(orginal)  */
+.comment-container {
+    max-width: 70rem;
+    /* come in middle continer-content */
+    margin: 3.5rem auto 0 auto;
+}
+
+.comments {
+    display: flex;
+    /* come 3 element in center 'commnts' */
+    justify-content: space-between;
+    /* hold width-box(3-comment) for responsive better */
+    /* flex-wrap: wrap; */
+}
+
+.comment {
+    background-color: #fff;
+    margin: 1rem;
+    border-radius: .3rem;
+    /* this under code(3 line) solve differnt height problem here  */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* set  width , height 3 white-box(comment) */
+    min-height: 18rem;
+    /* we need here small width */
+    flex-basis: 20rem;
+}
+
+.comment__content {
+    padding: 1.2rem;
+    /* create from left, fest line start for text  */
+    text-align: left;
+
+}
+
+.comment__body {
+    font-family: "Times Roman Italic";
+    color: #7e8085;
+    line-height: 1.5rem;
+    /* delete default margine:16 */
+    margin: 0;
+
+}
+
+.comment__info {
+    display: flex;
+    border: 1px solid #e8ebef;
+    padding: 0.8rem 1.2rem;
+    /* align-items:strech(default) ; */
+    align-items: center;
+}
+
+.comment__img {}
+
+.comment__person {
+    color: #000;
+    margin: 0 0 0 .5rem;
+}
+
+/* start companies */
+
+.companies {
+    display: flex;
+    justify-content: space-between;
+    /*in  vertical => set items in center */
+    align-items: center;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+
+}
+
+.companies__img {
+    /* change inline to block */
+    display: block;
+    /* set item with item 'comment' in same width */
+    margin: 1rem;
+}
+
+/* start portFolio */
+/* css portFolio__title
+portFolio__text : same works__title , works__text */
+
+
+.portFolio {
+    text-align: center;
+    /* ditance from last container(top) */
+    padding: 2rem 0;
+    /* set fix value margin for ervery distance section main */
+    margin: 5rem 0;
+}
+
+.portFolio-items {
+    display: flex;
+    /* if you give not wrap come => flex-shrink for items(smaller item) */
+    flex-wrap: wrap;
+    /* manage blank place betweeen item in vertical */
+    justify-content: space-between;
+    margin-top: 3rem;
+
+}
+
+.portFolio-item {
+    flex-basis: 23rem;
+    margin-top: 2rem;
+    /* img 100% in div,then you must overflow: hidden;then accept  border-radius */
+    overflow: hidden;
+    /* creste border-radius standard */
+    border-radius: .3rem;
+}
+
+.portFolio-img {
+    width: 100%;
+    /* under img don`t have border-radiou ,then, first:height,second:obj.. */
+    height: 100%;
+    object-fit: cover;
+}
+
+/* start footer */
+.footer {}
+
+/* start footer top */
+.newsletter {
+    background-color: #2c57e4;
+    padding: 6.5rem 0;
+    color: #fff;
+}
+
+.newsletter__wrapper {
+    display: flex;
+    justify-content: space-between;
+    /* child item come parllel in vertical   */
+    align-items: center;
+}
+
+.newsletter__text {
+    font-size: 1.6rem;
+    font-weight: normal;
+}
+
+.newsletter__email {
+    background-color: #fff;
+    flex-basis: 22rem;
+    /* input and button seat Continuous */
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3rem 0.3rem 0.3rem 1.5rem;
+    border-radius: .3rem;
+    /* child item come parllel in vertical   */
+    align-items: center;
+}
+
+.newsletter__txt {
+    border: none;
+    outline: none;
+    /* must same parenet size(div) */
+    width: 100%;
+}
+
+.newsletter__btn {
+    background-color: #2f5bea;
+    border: none;
+    /* border in time press button */
+    outline: none;
+    padding: 1.5rem 1rem;
+    /* child-button(img) come in center  button */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .3rem;
+}
+
+/* start footer bottom */
+.copy-right {
+    color: #6c7890;
+    padding: 1rem 0;
+}
+
+.copy-right__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.copy-right__text {}
+
+
+/* Project Responsive */
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .portFolio-item {
+        flex-basis: 28rem;
+    }
+
+    .newsletter__text {
+        max-width: 28rem;
+    }
+
+}
+
+@media only screen and (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .header-link {
+        display: none;
+    }
+
+    /*  */
+
+    .header-content {
+        flex-direction: column-reverse;
+    }
+
+    .header-bottom {
+        margin-top: 3rem;
+    }
+
+    .header-content__wrapper {
+        max-width: 100%;
+    }
+
+    .heder-content__right {
+        /* division part with '.heder-content__left' */
+        margin-bottom: 2rem;
+    }
+
+    .header-content__links {
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    .header-content__link {
+        margin-bottom: 1rem;
+    }
+
+    /*  */
+    .comments {
+        flex-wrap: wrap;
+    }
+
+    .comment {
+        flex-basis: 19rem;
+    }
+
+    .companies {
+        justify-content: center;
+        margin-top: 2.5rem;
+    }
+
+    .portFolio-item {
+        flex-basis: 20rem;
+    }
+
+    .newsletter__text {
+        max-width: 20rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+
+    .header__icon {
+        display: block;
+    }
+
+    .menu {
+        position: fixed;
+        top: 0;
+        left: -256px;
+        bottom: 0;
+        background: #3f70e1;
+        width: 16rem;
+        flex-direction: column;
+        padding: 2rem 1rem;
+        transition: 0.3s all;
+    }
+
+    .menu-item {
+        margin-bottom: 2rem;
+        font-size: 1.2rem;
+    }
+
+    .menu__link {
+        color: #fff;
+    }
+
+    .works-content__item {
+        /* every one 3 item size */
+        flex-basis: 14rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .comment {
+        margin: 0 0 1.5rem 0;
+        flex-basis: 15rem;
+
+    }
+
+    .portFolio-item {
+        flex-basis: 100%;
+    }
+
+    .newsletter__wrapper {
+        flex-direction: column;
+    }
+
+    .newsletter__email {
+        /* now recive your size from element size with auto */
+        /* here flex-basis is height,because direction:column */
+        flex-basis: auto;
+        width: 100%
+    }
+
+    .newsletter__text {
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .works-content__item {
+        /* every one 3 item size */
+        flex-basis: 100%;
+
+    }
+
+    .works-content__text {
+        max-width: 100%;
+    }
+
+    .newsletter__btn {
+        padding: 1rem 1.2rem;
+    }
+
+}
